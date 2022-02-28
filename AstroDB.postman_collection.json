@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "e63d55ff-10b2-45d3-a59b-7f9ca1c35952",
+		"name": "AstroDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Solar System",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Solar System\",\n    \"distance\": 0,\n    \"numberOfStar\": 1,\n    \"mass\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hosts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Proxima Centauri",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Proxima Centauri\",\n    \"distance\": 4,\n    \"numberOfStar\": 3,\n    \"mass\": 2.3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hosts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Error",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Proxima Centauri\",\n    \"distance\": 4,\n    \"numberOfStar\": 3,\n    \"mass\": 2.3\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hosts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Jupiter",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jupiter\",\n    \"type\": \"GAS_GIANT\",\n    \"semiMajorAxis\": 5.2,\n    \"orbitalPeriod\": 21,\n    \"mass\": 1,\n    \"discovery\": \"0022-02-28\",\n    \"confirmed\": true\n }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hosts/1/planets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hosts",
+						"1",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Mars",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jupiter\",\n    \"type\": \"EARTH_LIKE\",\n    \"semiMajorAxis\": 2.1,\n    \"orbitalPeriod\": 2,\n    \"mass\": 0.05,\n    \"discovery\": \"0022-02-28\",\n    \"confirmed\": true\n }\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/hosts/1/planets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hosts",
+						"1",
+						"planets"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
