@@ -31,7 +31,7 @@ class HostSystemRepositoryTest {
                 .setNumberOfStar(1);
         solar_system
                 .setDistance(.0)
-                .setMass(1)
+                .setMass(1f)
                 .setName("Solar System");
 
         hostSystemRepository.save(solar_system);
@@ -47,6 +47,7 @@ class HostSystemRepositoryTest {
         final var solar_system = new HostSystem()
                 .setNumberOfStar(1);
         solar_system
+                .setMass(1f)
                 .setDistance(0.0)
                 .setName("Solar System");
 
@@ -55,6 +56,7 @@ class HostSystemRepositoryTest {
         final var proxima = new HostSystem()
                 .setNumberOfStar(3);
         proxima
+                .setMass(2.3f)
                 .setDistance(4.)
                 .setName("Proxima Centauri");
 

@@ -1,8 +1,9 @@
 package fr.uga.l3.miage.astrocatalog;
 
 import fr.uga.l3.miage.astrocatalog.host.data.HostSystem;
-import fr.uga.l3.miage.astrocatalog.host.data.HostSystemService;
+import fr.uga.l3.miage.astrocatalog.host.svc.HostSystemService;
 import fr.uga.l3.miage.astrocatalog.planet.data.Planet;
+import fr.uga.l3.miage.astrocatalog.planet.svc.PlanetService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -21,12 +22,16 @@ class HostSystemServiceTest {
     @Autowired
     private HostSystemService hostSystemService;
 
+    @Autowired
+    private PlanetService planetService;
+
     @Test
     void shouldSaveSystem() throws Exception {
 
         final var solar_system = new HostSystem()
                 .setNumberOfStar(1);
         solar_system
+                .setMass(1)
                 .setDistance(.0)
                 .setName("Solar System");
 
@@ -56,7 +61,9 @@ class HostSystemServiceTest {
         final var sun = hostSystemService.findById(solar_system.getId());
         assertThat(sun).isPresent();
         assertThat(sun.get()).isNotSameAs(solar_system);
-        assertThat(sun.get().getPlanets()).hasSize(2);
+
+        final var ourPlanets = planetService.findByHostId(sun.get().getId());
+        assertThat(ourPlanets).hasSize(2);
 
     }
 

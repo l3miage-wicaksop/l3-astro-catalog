@@ -1,6 +1,6 @@
 package fr.uga.l3.miage.astrocatalog.host;
 
-import fr.uga.l3.miage.astrocatalog.host.data.HostSystemService;
+import fr.uga.l3.miage.astrocatalog.host.svc.HostSystemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

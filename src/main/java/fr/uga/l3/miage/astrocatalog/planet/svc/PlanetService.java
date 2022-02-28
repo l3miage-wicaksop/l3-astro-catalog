@@ -1,5 +1,7 @@
-package fr.uga.l3.miage.astrocatalog.planet.data;
+package fr.uga.l3.miage.astrocatalog.planet.svc;
 
+import fr.uga.l3.miage.astrocatalog.planet.data.Planet;
+import fr.uga.l3.miage.astrocatalog.planet.data.PlanetRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -21,7 +21,7 @@ public class PlanetDTO {
     @NotEmpty
     private String name;
 
-    @Min(0)
+    @Positive
     @NotNull
     private Float mass;
 

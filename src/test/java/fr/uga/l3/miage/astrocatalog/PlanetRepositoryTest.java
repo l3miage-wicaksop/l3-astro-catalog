@@ -18,7 +18,7 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 
 @DataJpaTest
-public class PlanetRepositoryTest {
+class PlanetRepositoryTest {
 
     @Autowired
     HostSystemRepository hostSystemRepository;
@@ -33,6 +33,7 @@ public class PlanetRepositoryTest {
                 .setNumberOfStar(1);
         solar_system
                 .setDistance(.0)
+                .setMass(1)
                 .setName("Solar System");
 
         hostSystemRepository.save(solar_system);
