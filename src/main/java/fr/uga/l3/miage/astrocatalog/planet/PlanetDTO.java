@@ -45,4 +45,11 @@ public class PlanetDTO {
     @Null
     private HostSystemDTO host;
 
+    public String getName() {
+        return name;
+    }
+
+    
+
+    
 }

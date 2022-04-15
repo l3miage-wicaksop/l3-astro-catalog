@@ -30,4 +30,41 @@ public class HostSystemDTO {
     @Min(1)
     private Integer numberOfStar;
 
+
+
+    public String getName() {
+        return name;
+    }
+
+
+
+    public HostSystemDTO setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+
+
+    public HostSystemDTO setNumberOfStar(Integer numberOfStar) {
+        this.numberOfStar = numberOfStar;
+        return this;
+    }
+
+
+
+    public HostSystemDTO setDistance(Double distance) {
+        this.distance = distance;
+        return this;
+    }
+
+
+    public HostSystemDTO setMass(Float mass) {
+        this.mass = mass;
+        return this;
+    }
+
+
+    
+
+    
 }
